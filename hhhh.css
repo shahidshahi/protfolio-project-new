@@ -1,0 +1,157 @@
+/* -------------------------------
+   🔧 Advanced Responsive Media Queries
+-------------------------------- */
+
+/* 📱 Extra Small Devices (≤ 480px) */
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content img {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  .skills-container {
+    padding: 0 1rem;
+  }
+
+  .skill h3 {
+    font-size: 1rem;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  #contact-form input,
+  #contact-form textarea,
+  #contact-form button {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* 📱 Small Devices (481px – 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content img {
+    width: 80%;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  #contact-form {
+    width: 90%;
+  }
+}
+
+/* 💻 Medium Devices (769px – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav ul {
+    gap: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-content {
+    gap: 1.5rem;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skill h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* 🖥 Large Devices (1025px – 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .hero h2 {
+    font-size: 3rem;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-level {
+    height: 15px;
+  }
+
+  #contact-form {
+    width: 70%;
+  }
+}
+
+/* 🖥🖥 Extra Large Devices (1441px and up) */
+@media (min-width: 1441px) {
+  .hero h2 {
+    font-size: 3.5rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skill-level {
+    height: 18px;
+  }
+
+  .about-content img {
+    width: 350px;
+  }
+
+  #contact-form {
+    max-width: 700px;
+  }
+}
